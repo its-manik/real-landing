@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* hide scrollbar for chrome, opera, suffari */
+
+/* hide scrollbar for firefox. */
+html {
+  scroll-behavior: smooth;
+}
+/* hide scrollbar for edge, IE. */
+
+/*custom scrollbar 
+/* 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#793FDF), to(#7091F5));
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+} */
+
+.navbar {
+  padding: 0px 250px !important;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 16px;
+  color: #503172 !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 16px 10px;
+}
+
+.nav-link:hover{
+  color: #000 !important;
+}
+
+.containerr {
+  max-width: 1505px;
+  margin: auto;
+}
+.header {
+  width: 100%;
+  padding: 12px 0;
+}
+
+/* banner style */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img-web {
+  display: block;
+  width: 100%;
+  animation: fadeInSlideDown 1s ease-out;
+}
+.banner-img-mobile {
+  display: none;
+  width: 100%;
+  animation: fadeInSlideDown 1s ease-out;
+}
+
+/* Keyframes for the banner animation */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0;
+}
+
+.about-us.containerr {
+  max-width: 1350px;
+}
+
+.about-project {
+  animation: SlideLeft 1s ease-out;
+  width: 100%;
+}
+.about-project img {
+  width: 100%;
+}
+.about-text {
+  animation: SlideRight 1s ease-out;
+}
+.about-us > div > p {
+  margin-bottom: 20px;
+}
+.section-title {
+  margin-bottom: 30px;
+}
+.section-title > h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(84, 83, 83);
+}
+.section-title > h4 {
+  font-family: "Lora", serif;
+  font-size: 38px;
+  color: #503172;
+  margin: 15px 0 0;
+  font-weight: 700;
+}
+
+@keyframes SlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Highlight section style */
+.highlights {
+  background-image: url(https://saraswatisquare.in/media/images/highlights/highlights-bg.webp);
+  background-color: #7802f613;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.highlights > .containerr > .section-title > h4 {
+  width: 60%;
+  margin: 15px auto;
+}
+.highlights-text1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlights-text1 img {
+  max-width: 70px;
+}
+
+.highlights-text-title {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #503172;
+  font-weight: 500;
+}
+.highlights-text-description {
+  color: #503172;
+  width: 80%;
+  margin: auto;
+}
+.fa-solid {
+  font-size: 30px;
+  color: #503172;
+}
+
+@keyframes SlideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes SlideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* amenities style */
+.amenities {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-image: url(https://saraswatisquare.in/media/images/amenities/amenities-bg-1.webp);
+  position: relative;
+}
+
+.amenities::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+.amenities-containerr {
+  position: relative;
+}
+.amenities > div > .section-title > h3,
+.amenities > div > .section-title > h4 {
+  color: white;
+  text-align: center;
+}
+.amenities-btn {
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.amenities-content {
+  text-align: center;
+  color: white;
+}
+.amenities-btn > button {
+  padding: 13px 50px;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  border: 1px solid white;
+  font-weight: 500;
+  cursor: pointer;
+}
+#amenities-btn-transition {
+  position: relative;
+  display: block;
+  line-height: 1;
+  border: 1px solid #fff;
+  text-align: center;
+  color: white;
+  background: transparent;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#amenities-btn-transition:hover {
+  background-color: white;
+  color: black;
+}
+.amenities-content > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 60px;
+}
+.amenities-tabs-items {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.amenities-tabs-items-inner p {
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.amenities-tabs-items-inner p::before {
+  position: absolute;
+  content: "";
+  background-image: url(https://saraswatisquare.in/media/images/amenities/check.svg);
+  height: 15px;
+  width: 15px;
+  left: -25px;
+  top: 5px;
+}
+
+/* Gallery */
+.section_heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #503172;
+}
+.gallery img {
+  max-width: 100%;
+}
+.gallery {
+  padding: 100px 0;
+}
+
+.slider-wrapper {
+  max-width: 1450px;
+  /* padding: 50px; */
+  margin: auto;
+}
+
+.splide__arrow {
+  opacity: 1 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 0 !important;
+  background-color: #503172 !important;
+  right: 100px;
+}
+.splide__arrow svg {
+  fill: #fff !important;
+}
+
+.splide__slide p {
+  text-align: center !important;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #503172;
+}
+
+@media screen and (min-width: 640px) {
+  .slider-wrapper .splide {
+    padding: 0 4rem;
+  }
+}
+
+/* Gallery end */
+
+/* Map start */
+
+#map {
+  background: #9854e180;
+  padding: 100px 0;
+}
+
+.map-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.map-heading h3 {
+  color: #fff;
+}
+.map-heading h2 {
+  color: #503172;
+  font-size: 45px;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+.map-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.map {
+  height: 100%;
+  flex: 2;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map-content {
+  background: #fff;
+  color: #555;
+  height: 100%;
+  flex: 1;
+}
+.map-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 60px 70px;
+}
+
+.map-content > div > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.map-content div img {
+  width: 35px;
+}
+
+/* Map end */
+
+/* Plans start */
+
+#plans {
+  padding: 100px 0;
+}
+
+.plans-wrapper {
+  display: flex;
+  gap: 50px;
+  text-align: center;
+}
+
+.plan {
+  width: 500px;
+  height: 360px;
+  position: relative;
+}
+.plan-img {
+  filter: blur(5px);
+  width: 100% !important;
+  height: 100%;
+  background-image: url(../assets/gallery/living\ room.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 2px 13px 34px 35px rgba(0, 0, 0, 0.47);
+}
+
+.plans-wrapper p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.plan-btn {
+  padding: 13px 32px;
+  border: none;
+  outline: none;
+  background: #503172;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plan p {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Plans end */
+
+/* About Developer style */
+.about-developer {
+  padding: 100px 0;
+  background-image: url(https://saraswatisquare.in/media/images/highlights/highlights-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 20px 0;
+}
+.about-dev-containerr {
+  max-width: 900px;
+  margin: auto;
+}
+.about-dev-content p {
+  font-size: 16px;
+  color: rgb(84, 83, 83);
+  margin-bottom: 20px;
+}
+.about-dev-content {
+  margin-top: 20px;
+}
+
+/* Footer style */
+#footer {
+  background-color: black;
+  padding: 100px 0 80px;
+}
+.theme-padding {
+  padding: 0 200px;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.column {
+  color: white;
+  padding: 0 12px;
+  width: 25%;
+  font-size: 16px;
+}
+.column div h4 {
+  margin: 0 0 15px;
+}
+.column a,
+.column p {
+  color: rgb(182, 179, 179);
+}
+.footer-col-contact a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-col-contact a:hover {
+  color: rgb(153, 94, 54);
+}
+.footer-col-qr-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.disclaimer {
+  color: white;
+  margin: 40px 0;
+}
+.disclaimer p {
+  color: rgb(182, 179, 179);
+}
+.copyright-bar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(182, 179, 179);
+  margin-top: 10px;
+}
+.copyright-bar ul {
+  list-style: none;
+}
+.copyright-bar a {
+  text-decoration: none;
+}
+.copyright-detail p,
+.copyright-bar a {
+  display: inline;
+  color: rgb(182, 179, 179);
+}
+.copyright-bar a:hover,
+.footer-col-qr-text > p > a:hover {
+  color: rgb(153, 94, 54);
+}
+.copyright-bar a,
+.footer-col-qr-text > p > a {
+  transition: all 0.5s ease-in-out;
+}
+.fade-in-top {
+  animation: SlideFromTop 1s ease-out;
+}
+.fade-in-bottom {
+  animation: SlideFromBottom 1s ease-out;
+}
+
+.white {
+  height: 100px;
+}
+
+.form {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #503172;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.form input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+}
+
+.form input::placeholder {
+  color: #fff;
+}
+
+.form button {
+  padding: 12px 82px;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.form button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+
+.modall {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.27);
+  top:0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal-form {
+  background: #503172;
+  color: #fff;
+  padding: 50px 30px;
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+
+
+.modall.active {
+  display: flex !important
+  ;
+}
+
+.modal-form h2 {
+  margin-bottom: 40px;
+  font-size: 23px;
+}
+
+.modal-form input,
+.modal-form button {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+}
+.modal-form input::placeholder {
+  color: #fff;
+}
+
+.modal-form button {
+  padding: 12px 82px;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.3s;
+  color: #000;
+  margin-top: 20px;
+}
+
+.modal-form button:hover {
+  background: transparent;
+  color: #fff;
+}
+.modal-form > div > div {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal-form > img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.bottom-buttons button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-top: 1px solid #503172;
+  cursor: pointer;
+}
+
+.bottom-buttons button:last-child {
+  border-left: 1px solid #503172;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    display: none;
+  }
+
+  .bottom-buttons {
+    display: flex;
+  }
+  .plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .banner-img-web {
+    display: none;
+    width: 100%;
+    animation: fadeInSlideDown 1s ease-out;
+  }
+  .banner-img-mobile {
+    display: block;
+    width: 100%;
+    animation: fadeInSlideDown 1s ease-out;
+  }
+
+  .navbar {
+    padding: 0 50px !important;
+    flex-direction: row !important;
+  }
+
+  .plan {
+    width: 300px;
+    height: 200px;
+  }
+  .plan button {
+    font-size: 14px;
+  }
+  .about-project {
+    padding: 0 20px;
+  }
+  .about-us.containerr {
+    padding: 0 30px;
+  }
+  .section-title > h4 {
+    font-size: 25px;
+  }
+  .highlights-text1 {
+    grid-template-columns: 1fr;
+  }
+  .highlights > .containerr {
+    padding: 30px;
+  }
+  .highlights > .containerr > .section-title > h4 {
+    width: 100%;
+  }
+  .amenities-btn > button {
+    padding: 9px 20px;
+  }
+  .amenities-tabs-items {
+    flex-direction: column;
+    gap: 0;
+  }
+  .amenities-containerr {
+    padding: 0 30px;
+  }
+
+  #map {
+    padding: 50px 0;
+  }
+
+  .map-heading h2 {
+    font-size: 30px;
+  }
+
+  .map {
+    width: 100%;
+    margin-bottom: -7px;
+  }
+
+  .map iframe {
+    height: 300px;
+  }
+
+  .map-wrapper {
+    flex-direction: column;
+    height: auto;
+    width: 95vw;
+    margin: auto;
+  }
+
+  .map-content {
+    width: 100%;
+  }
+
+  .map-content > div {
+    padding: 20px;
+  }
+  .modal-form {
+    width: 90vw;
+    height: 500px;
+    margin: auto;
+  }
+}
