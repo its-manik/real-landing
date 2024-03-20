@@ -30,7 +30,7 @@
   <body>
     <!-- Navbar start from here -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"
         ><img src="./assets/logo.webp" alt=""
       /></a>
@@ -68,7 +68,30 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
+
+    <div class="my-nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="logo">
+        <a  href="#"><img src="./assets/logo.webp" alt="" /></a>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a class="nav-link" href="#about-us">About US</a>
+        <a class="nav-link" href="#highlights">Highlights</a>
+        <a class="nav-link" href="#amenities">Amenities</a>
+        <a class="nav-link" href="#map">Connectivity</a>
+        <a class="nav-link" href="#plans">Floor Plans</a>
+        <a class="nav-link" href="#about-developer">About Developer</a>
+      </div>
+    </div>
 
     <!-- Navbar end -->
 
@@ -209,7 +232,9 @@
         <div class="amenities-content fade-in-bottom">
           <div class="amenities-btn">
             <button class="recbutton active">Recreational Amenities</button>
-            <button class="roofbutton" id="amenities-btn-transition">Rooftop Amenities</button>
+            <button class="roofbutton" id="amenities-btn-transition">
+              Rooftop Amenities
+            </button>
           </div>
           <div class="recamenities active">
             <h3>Unleash the Splendors of Recreational Amenities!</h3>
@@ -318,7 +343,8 @@
         <div class="map-heading fade-in-top">
           <h3>CONNECTIVITY</h3>
           <h2>
-            Dombivli’s Outstanding Residential Experience: Discover More in the Connection
+            Dombivli’s Outstanding Residential Experience: Discover More in the
+            Connection
           </h2>
         </div>
         <div class="map-wrapper">
@@ -418,15 +444,7 @@
             <div class="plan">
               <div class="plan-img"></div>
               <button class="plan-btn open-btn">Equire Now</button>
-              <p>1 BHK</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="plan">
-              <div class="plan-img"></div>
-              <button class="plan-btn open-btn">Equire Now</button>
-              <p>1 BHK</p>
+              <p>2 BHK</p>
             </div>
           </div>
         </div>
@@ -477,7 +495,7 @@
               class="column is-12-mobile is-6-tablet is-3-desktop is-3-widescreen footer-col"
             >
               <div class="footer-col-logo">
-                <a href="https://saraswatisquare.in/">
+                <a href="#">
                   <picture>
                     <source
                       srcset="
@@ -514,15 +532,7 @@
             </div>
             <div
               class="column is-12-mobile is-6-tablet is-2-desktop is-3-widescreen footer-col"
-            >
-              <div class="footer-col-contact">
-                <h4>Contact Us</h4>
-                <a href="tel:+919930000058">+91 99 3000 0058</a>
-                <a href="mailto:sales@saraswatisquare.in"
-                  >sales@saraswatisquare.in</a
-                >
-              </div>
-            </div>
+            ></div>
             <div
               class="column is-12-mobile is-6-tablet is-4-desktop is-3-widescreen footer-col"
             >
@@ -585,7 +595,7 @@
             <div class="copyright-detail">
               <span
                 >© 2024 All Rights Reserved by Arista Skyline
-<!-- 
+                <!-- 
                 <span class="copyright-line">|</span>
                 <p>
                   Powered by
@@ -630,42 +640,46 @@
 
     <div class="modall">
       <form method="POST" class="modal-form">
-        <h2>Enquire Now</h2>
-        <div>
-          <div class="name">
+        <div class="modal-form-wrapper">
+          <h2>Enquire Now</h2>
+          <div>
+            <div class="name">
+              <input
+                type="text"
+                placeholder="First Name*"
+                name="fname"
+                class="fname"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                name="lname"
+                class="lname"
+              />
+            </div>
             <input
               type="text"
-              placeholder="First Name*"
-              name="fname"
-              class="fname"
+              placeholder="Mobile Number*"
+              name="phone"
+              class="phone"
             />
             <input
-              type="text"
-              placeholder="Last Name*"
-              name="lname"
-              class="lname"
+              type="email"
+              placeholder="Email Address*"
+              name="email"
+              class="email"
             />
+            <button type="button" class="modalFormBtn">SUBMIT</button>
           </div>
-          <input
-            type="text"
-            placeholder="Mobile Number*"
-            name="phone"
-            class="phone"
-          />
-          <input
-            type="email"
-            placeholder="Email Address*"
-            name="email"
-            class="email"
-          />
-          <button type="button" class="modalFormBtn">SUBMIT</button>
         </div>
-        <img
-          class="closeModal"
-          type="submit"
-          src="./assets/icons8-close-100.png"
-          alt=""
-        />
+        <div class="modal-close">
+          <img
+            class="closeModal"
+            type="submit"
+            src="./assets/icons8-close-100.png"
+            alt=""
+          />
+        </div>
       </form>
     </div>
 

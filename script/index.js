@@ -25,8 +25,6 @@ const sheetUrl =
 openBtn.forEach((item) => {
   item.addEventListener("click", () => {
     modall.classList.add("active");
-    console.log("asl;dkf");
-    console.log(modall);
   });
 });
 
@@ -70,12 +68,14 @@ formbtn.addEventListener("click", (e) => {
         lname.value = "";
         phone.value = "";
         email.value = "";
+
+        setTimeout(() => {
+          toast.style.top = "-100px";
+          toast.style.color = "#000";
+          window.location.replace("/thankyou.html");
+        }, 2000);
       });
 
-    setTimeout(() => {
-      toast.style.top = "-100px";
-      toast.style.color = "#000";
-    }, 2000);
     e.preventDefault();
   }
 });
@@ -119,7 +119,8 @@ modalFormBtn.addEventListener("click", (e) => {
         setTimeout(() => {
           toast.style.top = "-100px";
           toast.style.color = "#000";
-        }, 3000);
+          window.location.replace("/thankyou.html");
+        }, 2000);
       });
 
     e.preventDefault();
@@ -141,3 +142,9 @@ roofbutton.addEventListener("click", () => {
   roofbutton.classList.add("active")
   recbutton.classList.remove("active");
 });
+
+
+
+setTimeout(() => {
+  modall.classList.add("active");
+}, 2000);
