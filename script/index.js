@@ -14,6 +14,10 @@ const fname1 = modalForm.querySelector(".fname");
 const lname1 = modalForm.querySelector(".lname");
 const email1 = modalForm.querySelector(".email");
 const phone1 = modalForm.querySelector(".phone");
+const recamenities = document.querySelector(".recamenities");
+const roofamenities = document.querySelector(".roofamenities");
+const recbutton = document.querySelector(".recbutton");
+const roofbutton = document.querySelector(".roofbutton");
 
 const sheetUrl =
   "https://script.google.com/macros/s/AKfycbyY2bGVixbTKXwLByUFBDS8t4KPoXlywZykQxyPo6Ccx5k2QbapDnIyl2j3aNxe2rY8/exec";
@@ -110,7 +114,7 @@ modalFormBtn.addEventListener("click", (e) => {
         lname1.value = "";
         phone1.value = "";
         email1.value = "";
-        modall.classList.remove("active")
+        modall.classList.remove("active");
 
         setTimeout(() => {
           toast.style.top = "-100px";
@@ -118,8 +122,22 @@ modalFormBtn.addEventListener("click", (e) => {
         }, 3000);
       });
 
-
-
     e.preventDefault();
   }
+});
+
+recbutton.addEventListener("click", () => {
+  recamenities.classList.add("active");
+  roofamenities.classList.remove("active");
+  recbutton.classList.add("active")
+  roofbutton.classList.remove("active");
+});
+
+
+roofbutton.addEventListener("click", () => {
+  console.log("hello");
+  roofamenities.classList.add("active");
+  recamenities.classList.remove("active");
+  roofbutton.classList.add("active")
+  recbutton.classList.remove("active");
 });

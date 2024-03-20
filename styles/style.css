@@ -18,6 +18,11 @@ html {
 }
 /* hide scrollbar for edge, IE. */
 
+button:focus{
+  outline: none !important;
+}
+
+
 /*custom scrollbar 
 /* 
 ::-webkit-scrollbar{
@@ -250,15 +255,6 @@ html {
   color: white;
 }
 .amenities-btn > button {
-  padding: 13px 50px;
-  background-color: white;
-  font-size: 16px;
-  font-family: "Lora", serif;
-  border: 1px solid white;
-  font-weight: 500;
-  cursor: pointer;
-}
-#amenities-btn-transition {
   position: relative;
   display: block;
   line-height: 1;
@@ -272,11 +268,34 @@ html {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   cursor: pointer;
+  padding: 13px 50px;
 }
-#amenities-btn-transition:hover {
+
+.amenities-btn > button:hover {
   background-color: white;
   color: black;
 }
+
+.recbutton.active {
+  background-color: white;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  border: 1px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+.roofbutton.active {
+  padding: 13px 50px;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  border: 1px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+
 .amenities-content > h3 {
   font-size: 16px;
   font-weight: 400;
@@ -303,6 +322,19 @@ html {
   width: 15px;
   left: -25px;
   top: 5px;
+}
+
+.recamenities {
+  display: none;
+}
+.roofamenities {
+  display: none;
+}
+.recamenities.active {
+  display: block;
+}
+.roofamenities.active {
+  display: block;
 }
 
 /* Gallery */
@@ -750,7 +782,7 @@ html {
   box-shadow: 0 0 10px 3px #6c6c6c33;
   overflow: hidden;
   background-color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 3000000;
 }
 
