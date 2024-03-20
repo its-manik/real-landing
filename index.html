@@ -585,11 +585,11 @@
     </footer>
     <section class="white"></section>
     <form method="POST" class="form">
-      <input type="text" placeholder="First Name*" name="fname" />
-      <input type="text" placeholder="Last Name*" name="lname" />
-      <input type="text" placeholder="Mobile Number*" name="phone" />
-      <input type="email" placeholder="Email Address*" name="email" />
-      <button type="button" type="submit">SUBMIT</button>
+      <input type="text" placeholder="First Name*" name="fname" class="fname" />
+      <input type="text" placeholder="Last Name*" name="lname" class="lname" />
+      <input type="text" placeholder="Mobile Number*" name="phone" class="phone" />
+      <input type="email" placeholder="Email Address*" name="email" class="email" />
+      <button type="button" type="submit" class="formbtn">SUBMIT</button>
     </form>
 
     <div class="modall">
@@ -597,12 +597,12 @@
         <h2>Enquire Now</h2>
         <div>
           <div class="name">
-            <input type="text" placeholder="First Name*" name="fname" />
-            <input type="text" placeholder="Last Name*" name="lname" />
+            <input type="text" placeholder="First Name*" name="fname" class="fname" />
+            <input type="text" placeholder="Last Name*" name="lname" class="lname" />
           </div>
-          <input type="text" placeholder="Mobile Number*" name="phone" />
-          <input type="email" placeholder="Email Address*" name="email" />
-          <button type="button">SUBMIT</button>
+          <input type="text" placeholder="Mobile Number*" name="phone" class="phone" />
+          <input type="email" placeholder="Email Address*" name="email" class="email" />
+          <button type="button" class="modalFormBtn">SUBMIT</button>
         </div>
         <img class="closeModal" type="submit" src="./assets/icons8-close-100.png" alt="" />
       </form>
@@ -612,6 +612,8 @@
       <button class="open-btn">Enquire Now</button>
       <button class="open-btn">Download Brochure</button>
     </div>
+
+    <div class="toast">Successfull!</div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -645,6 +647,9 @@
             perPage: 2,
             gap: ".7rem",
             height: "5rem",
+          },
+          550: {
+            height: "27rem",
           },
           480: {
             gap: "7.5rem",
