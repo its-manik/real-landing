@@ -145,6 +145,6 @@ roofbutton.addEventListener("click", () => {
 
 
 
-setTimeout(() => {
-  modall.classList.add("active");
-}, 2000);
+// setTimeout(() => {
+//   modall.classList.add("active");
+// }, 6000);
